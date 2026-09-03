@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop & Bistro | Artisanal Roastery & Culinary Kitchen</title>
+  <meta name="description" content="Discover our cafe & restaurant menu with fresh coffee, delicious meals, online ordering, and table reservations in a cozy atmosphere.">
+  <meta property="og:title" content="Coffee Shop & Bistro | Artisanal Roastery & Culinary Kitchen">
+  <meta property="og:description" content="Discover our cafe & restaurant menu with fresh coffee, delicious meals, online ordering, and table reservations in a cozy atmosphere.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/WebP" href="assets/logo.WebP"/>
+
+  <!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       NAVIGATION BAR
+       ======================================================================== -->
+  <header id="site-header" class="site-nav-wrapper">
+    <div class="container">
+      <nav id="primary-navigation" class="site-nav" aria-label="Primary">
+        <!-- Logo -->
+        <a id="brand-logo-btn" href="#hero" class="brand-logo-link">
+          <img src="assets/logo.WebP" alt="Coffee Shop Logo" class="brand-logo-img">
+          <div class="brand-title-group">
+            <span class="brand-title">Coffee Shop</span>
+            <span class="brand-subtitle">Roastery & Bistro</span>
+          </div>
+        </a>
+
+        <!-- Desktop Links -->
+        <ul id="main-nav-links" class="nav-menu-list">
+          <li><a href="#menu" class="nav-link">Menu & Order</a></li>
+          <li><a href="#signature" class="nav-link">Chef's Picks</a></li>
+          <li><a href="#story" class="nav-link">Our Story</a></li>
+          <li><a href="#reservations" class="nav-link">Reservations</a></li>
+          <li><a href="#hours-location" class="nav-link">Hours & Location</a></li>
+        </ul>
+
+        <!-- Right Side Nav Actions -->
+        <div class="nav-actions">
+          <!-- Quick Search Anchor -->
+          <a id="nav-search-btn" href="#menu" class="nav-btn-icon" title="Search Menu" aria-label="Search Menu">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+
+          <!-- Favorites Quick Filter Button -->
+          <button id="nav-favorites-btn" class="nav-btn-icon" title="View Favorites" aria-label="View Favorites">
+            <i class="fa-solid fa-heart"></i>
+            <span id="nav-fav-badge" class="nav-badge-count" style="display: none;">0</span>
+          </button>
+
+          <!-- Cart Drawer Toggle -->
+          <button id="nav-cart-btn" class="nav-btn-icon" aria-label="Open Shopping Cart" title="View Cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span id="cart-item-count-badge" class="nav-badge-count">0</span>
+          </button>
+
+          <!-- Table Reservation CTA -->
+          <a id="nav-reserve-cta-btn" href="#reservations" class="btn-nav-reserve">
+            <i class="fa-regular fa-calendar-check"></i>
+            <span>Book Table</span>
+          </a>
+
+          <!-- Mobile Menu Hamburger -->
+          <button id="mobile-menu-toggle-btn" class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       HERO SECTION
+       ======================================================================== -->
+  <section id="hero" class="hero-editorial-section">
+    <div class="container hero-content">
+      <!-- Live Status Badge -->
+      <div id="live-status-pill" class="hero-status-pill">
+        <span class="status-dot-pulse"></span>
+        <span id="live-hours-status-text">Open Today • 7:00 AM – 10:00 PM • Dine-in & Takeaway</span>
+      </div>
+
+      <!-- Headline & Subheading -->
+      <h1 class="hero-heading">
+        Artisanal Coffee & <br>
+        <span class="hero-accent-text">Culinary Bistro</span>
+      </h1>
+      <p class="hero-lead-text">
+        Ethically sourced single-origin micro-lot coffees, European-style viennoiserie, and scratch-kitchen bistro fare prepared fresh every morning in a warm, welcoming space.
+      </p>
+
+      <!-- Primary Action Buttons -->
+      <div class="hero-cta-group">
+        <a id="hero-order-btn" href="#menu" class="btn-primary-lg">
+          <i class="fa-solid fa-utensils"></i>
+          <span>Order Online Now</span>
+        </a>
+        <a id="hero-reserve-btn" href="#reservations" class="btn-secondary-lg">
+          <i class="fa-regular fa-calendar"></i>
+          <span>Reserve a Table</span>
+        </a>
+      </div>
+
+      <!-- Value Props Feature Bar -->
+      <div class="hero-feature-bar">
+        <div class="hero-feature-item">
+          <div class="hero-feature-icon"><i class="fa-solid fa-seedling"></i></div>
+          <div class="hero-feature-text">
+            <strong>100% Arabica Specialty</strong>
+            <span>Single-origin micro roasts</span>
+          </div>
+        </div>
+        <div class="hero-feature-item">
+          <div class="hero-feature-icon"><i class="fa-solid fa-fire-burner"></i></div>
+          <div class="hero-feature-text">
+            <strong>Stone-Fired Crusts</strong>
+            <span>48h fermented sourdough</span>
+          </div>
+        </div>
+        <div class="hero-feature-item">
+          <div class="hero-feature-icon"><i class="fa-solid fa-bread-slice"></i></div>
+          <div class="hero-feature-text">
+            <strong>Daily In-House Bakery</strong>
+            <span>Pure Normandy butter pastries</span>
+          </div>
+        </div>
+        <div class="hero-feature-item">
+          <div class="hero-feature-icon"><i class="fa-solid fa-bell-concierge"></i></div>
+          <div class="hero-feature-text">
+            <strong>Scratch Kitchen</strong>
+            <span>Handcrafted to order daily</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CHEF'S SIGNATURE PICKS SPOTLIGHT
+       ======================================================================== -->
+  <section id="signature" class="signature-section">
+    <div class="container">
+      <div class="section-header-centered">
+        <span class="section-eyebrow">House Highlights</span>
+        <h2 class="section-title">Curated Chef's Specialties</h2>
+        <p class="section-subtitle">A handpicked selection of our most celebrated creations, beloved by regulars and first-time guests alike.</p>
+      </div>
+
+      <div class="signature-grid">
+        <!-- Card 1: Specialty Espresso -->
+        <article class="signature-card">
+          <div class="signature-card-media">
+            <img src="assets/specialty-espresso.WebP" alt="Specialty Espresso" class="signature-card-img" loading="lazy">
+            <span class="signature-card-badge">Barista Choice</span>
+          </div>
+          <div class="signature-card-body">
+            <div class="signature-card-header">
+              <h3 class="signature-card-title">Specialty Espresso</h3>
+              <span class="signature-card-price">$3.50</span>
+            </div>
+            <p class="signature-card-desc">Single-origin Ethiopian Yirgacheffe roasted in-house. Bright floral aromatics with jasmine, bergamot, and sweet stone fruit finish.</p>
+            <div class="signature-card-footer">
+              <button class="btn-card-quickview" onclick="openQuickView('item-specialty-espresso')">Details</button>
+              <button class="btn-card-add" onclick="addItemToCart('item-specialty-espresso')">
+                <i class="fa-solid fa-plus"></i> Add to Order
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: Chicken Pesto Pizza -->
+        <article class="signature-card">
+          <div class="signature-card-media">
+            <img src="assets/Chicken-Pesto-Pizza.WebP" alt="Genovese Chicken Pesto Pizza" class="signature-card-img" loading="lazy">
+            <span class="signature-card-badge">Wood Fired</span>
+          </div>
+          <div class="signature-card-body">
+            <div class="signature-card-header">
+              <h3 class="signature-card-title">Genovese Chicken Pesto Pizza</h3>
+              <span class="signature-card-price">$18.75</span>
+            </div>
+            <p class="signature-card-desc">Wood-fired crust with fragrant sweet basil pesto, tender grilled chicken, sun-dried tomatoes, toasted pine nuts, and smoked provolone.</p>
+            <div class="signature-card-footer">
+              <button class="btn-card-quickview" onclick="openQuickView('item-chicken-pesto-pizza')">Details</button>
+              <button class="btn-card-add" onclick="addItemToCart('item-chicken-pesto-pizza')">
+                <i class="fa-solid fa-plus"></i> Add to Order
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: Traditional Kunafa -->
+        <article class="signature-card">
+          <div class="signature-card-media">
+            <img src="assets/kunafa.WebP" alt="Traditional Golden Kunafa" class="signature-card-img" loading="lazy">
+            <span class="signature-card-badge">Heritage Sweet</span>
+          </div>
+          <div class="signature-card-body">
+            <div class="signature-card-header">
+              <h3 class="signature-card-title">Traditional Golden Kunafa</h3>
+              <span class="signature-card-price">$5.50</span>
+            </div>
+            <p class="signature-card-desc">Crisp spun kataifi shredded pastry over sweet melted Nabulsi cheese, infused with orange blossom syrup and freshly crushed green pistachios.</p>
+            <div class="signature-card-footer">
+              <button class="btn-card-quickview" onclick="openQuickView('item-kunafa')">Details</button>
+              <button class="btn-card-add" onclick="addItemToCart('item-kunafa')">
+                <i class="fa-solid fa-plus"></i> Add to Order
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FULL INTERACTIVE MENU CATALOG SECTION
+       ======================================================================== -->
+  <section id="menu" class="menu-catalog-section">
+    <div class="container">
+      <div class="section-header-centered">
+        <span class="section-eyebrow">Freshly Prepared</span>
+        <h2 class="section-title">The Culinary & Cafe Menu</h2>
+        <p class="section-subtitle">Explore our full repertoire of artisanal coffee, hand-blended teas, hearty breakfasts, stone-baked pizzas, and gourmet bistro mains.</p>
+      </div>
+
+      <!-- Controls Wrapper (Search, Sort, Categories, Filter Chips) -->
+      <div class="menu-controls-wrapper">
+        <!-- Search and Sort Top Row -->
+        <div class="menu-search-and-sort">
+          <div class="search-input-box">
+            <i class="fa-solid fa-magnifying-glass search-icon-inside"></i>
+            <input 
+              type="text" 
+              id="menu-search-input" 
+              class="menu-search-input" 
+              placeholder="Search dishes, roasts, ingredients, or teas..." 
+              autocomplete="off"
+            >
+            <button id="search-clear-btn" class="search-clear-btn" title="Clear search">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <div class="sort-select-box">
+            <label for="menu-sort-select" class="sort-label">Sort by:</label>
+            <select id="menu-sort-select" class="sort-select">
+              <option value="recommended">Chef Recommended</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="name">Alphabetical (A - Z)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Category Tabs Carousel -->
+        <div id="category-tabs-nav" class="category-tabs-scroll" role="tablist">
+          <button class="category-tab-btn active" data-category="all" role="tab" aria-selected="true">
+            <i class="fa-solid fa-utensils"></i>
+            <span>All Offerings</span>
+            <span class="tab-count-badge" id="count-all">0</span>
+          </button>
+          <button class="category-tab-btn" data-category="coffee" role="tab" aria-selected="false">
+            <i class="fa-solid fa-mug-saucer"></i>
+            <span>Coffee & Espresso</span>
+            <span class="tab-count-badge" id="count-coffee">0</span>
+          </button>
+          <button class="category-tab-btn" data-category="tea" role="tab" aria-selected="false">
+            <i class="fa-solid fa-leaf"></i>
+            <span>Teas & Cold Drinks</span>
+            <span class="tab-count-badge" id="count-tea">0</span>
+          </button>
+          <button class="category-tab-btn" data-category="breakfast" role="tab" aria-selected="false">
+            <i class="fa-solid fa-egg"></i>
+            <span>Morning & Brunch</span>
+            <span class="tab-count-badge" id="count-breakfast">0</span>
+          </button>
+          <button class="category-tab-btn" data-category="pizza" role="tab" aria-selected="false">
+            <i class="fa-solid fa-pizza-slice"></i>
+            <span>Artisanal Pizzas</span>
+            <span class="tab-count-badge" id="count-pizza">0</span>
+          </button>
+          <button class="category-tab-btn" data-category="mains" role="tab" aria-selected="false">
+            <i class="fa-solid fa-drumstick-bite"></i>
+            <span>Bistro Mains & Steaks</span>
+            <span class="tab-count-badge" id="count-mains">0</span>
+          </button>
+          <button class="category-tab-btn" data-category="pasta" role="tab" aria-selected="false">
+            <i class="fa-solid fa-bowl-food"></i>
+            <span>Handcrafted Pastas</span>
+            <span class="tab-count-badge" id="count-pasta">0</span>
+          </button>
+          <button class="category-tab-btn" data-category="dessert" role="tab" aria-selected="false">
+            <i class="fa-solid fa-cake-candles"></i>
+            <span>Bakery & Desserts</span>
+            <span class="tab-count-badge" id="count-dessert">0</span>
+          </button>
+        </div>
+
+        <!-- Dietary and Quick Filter Chips -->
+        <div class="secondary-filter-chips">
+          <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-light); text-transform: uppercase;">Quick Filter:</span>
+          <button class="filter-chip" data-tag="signature">
+            <i class="fa-solid fa-star"></i> House Signatures
+          </button>
+          <button class="filter-chip" data-tag="vegetarian">
+            <i class="fa-solid fa-leaf"></i> Vegetarian Friendly
+          </button>
+          <button class="filter-chip" data-tag="sweet">
+            <i class="fa-solid fa-cookie-bite"></i> Sweet Indulgence
+          </button>
+          <button id="chip-filter-favorites" class="filter-chip" data-tag="favorites">
+            <i class="fa-solid fa-heart"></i> Saved Favorites
+          </button>
+        </div>
+      </div>
+
+      <!-- Menu Grid Container -->
+      <div id="menu-items-container" class="menu-items-grid" aria-live="polite">
+        <!-- Rendered dynamically by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       OUR STORY & ARTISAN CRAFT SECTION
+       ======================================================================== -->
+  <section id="story" class="story-editorial-section">
+    <div class="container">
+      <div class="section-header-centered">
+        <span class="section-eyebrow">Heritage & Philosophy</span>
+        <h2 class="section-title">The Craft Behind Every Dish</h2>
+        <p class="section-subtitle">We believe exceptional dining starts with uncompromising reverence for raw ingredients, timeless culinary techniques, and honest hospitality.</p>
+      </div>
+
+      <div class="story-cards-grid">
+        <div class="story-card">
+          <div class="story-card-number">01</div>
+          <h4>Ethical Single-Origin Beans</h4>
+          <p>Every coffee lot we roast is traceable directly to family-owned estates in Ethiopia, Colombia, and Guatemala. We pay sustainable premiums and roast twice weekly in small batches to preserve lively floral notes and rich chocolate undertones.</p>
+        </div>
+
+        <div class="story-card">
+          <div class="story-card-number">02</div>
+          <h4>The 48-Hour Sourdough</h4>
+          <p>Our pizza dough and country breads ferment gently for two days with a decades-old mother starter and pure stone-ground unbleached flours. The result is a bubbly, blistered crust that is wonderfully light and naturally digestible.</p>
+        </div>
+
+        <div class="story-card">
+          <div class="story-card-number">03</div>
+          <h4>Pâtisserie & Scratch Kitchen</h4>
+          <p>No shortcuts, artificial additives, or frozen bases. Our croissants are hand-laminated with 84% butterfat Normandy butter, our pastas rolled fresh each morning, and our marinades crafted from garden herbs and cold-pressed olive oils.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       TABLE RESERVATION SECTION
+       ======================================================================== -->
+  <section id="reservations" class="reservation-section">
+    <div class="container">
+      <div class="reservation-container-card">
+        <!-- Left Info Pane -->
+        <div class="reservation-info-pane">
+          <div>
+            <span class="section-eyebrow" style="color: var(--brand-gold);">Hospitality</span>
+            <h3>Reserve Your Table</h3>
+            <p>Join us for morning brunch on the sun-drenched patio, a quiet afternoon espresso meeting, or a candlelit dinner accompanied by artisan cuisine.</p>
+
+            <ul class="reservation-perks-list">
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>Instant booking confirmation via SMS & Email</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>Complimentary table holding for up to 15 minutes</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>Special accommodations for celebrations & dietary needs</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>Indoor fireplace booths or garden terrace seating</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="reservation-contact-note">
+            <p>For parties of 8 or more, private events, or catering inquiries, please call us directly at <strong>(555) 382-9104</strong>.</p>
+          </div>
+        </div>
+
+        <!-- Right Form Pane -->
+        <div class="reservation-form-pane">
+          <form id="table-reservation-form" onsubmit="handleReservationSubmit(event)">
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="res-name">Full Name *</label>
+                <input type="text" id="res-name" class="form-control" placeholder="e.g. Eleanor Vance" required>
+              </div>
+              <div class="form-group">
+                <label for="res-phone">Phone Number *</label>
+                <input type="tel" id="res-phone" class="form-control" placeholder="e.g. (555) 234-5678" required>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="res-date">Reservation Date *</label>
+                <input type="date" id="res-date" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="res-time">Preferred Time *</label>
+                <select id="res-time" class="form-control" required>
+                  <option value="">Select a time slot</option>
+                  <option value="08:00 AM">08:00 AM (Early Breakfast)</option>
+                  <option value="10:00 AM">10:00 AM (Brunch Rush)</option>
+                  <option value="12:00 PM">12:00 PM (Lunch)</option>
+                  <option value="02:00 PM">02:00 PM (Afternoon Coffee)</option>
+                  <option value="05:30 PM">05:30 PM (Early Dinner)</option>
+                  <option value="07:00 PM">07:00 PM (Prime Dinner)</option>
+                  <option value="08:30 PM">08:30 PM (Late Bistro)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="res-guests">Number of Guests *</label>
+                <select id="res-guests" class="form-control" required>
+                  <option value="1">1 Person (Solo Dining)</option>
+                  <option value="2" selected>2 People (Cozy Table)</option>
+                  <option value="3">3 People</option>
+                  <option value="4">4 People (Standard Table)</option>
+                  <option value="5">5 People</option>
+                  <option value="6">6 People (Family Table)</option>
+                  <option value="7">7 People</option>
+                  <option value="8+">8+ People (Large Party)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="res-seating">Seating Preference</label>
+                <select id="res-seating" class="form-control">
+                  <option value="no-preference">No Preference (First Available)</option>
+                  <option value="patio">Sunlit Garden Terrace</option>
+                  <option value="window">Window Alcove Booth</option>
+                  <option value="fireplace">Cozy Fireplace Lounge</option>
+                  <option value="bar">Barista & Kitchen Counter</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="res-notes">Special Occasion or Dietary Notes</label>
+              <textarea id="res-notes" class="form-control" placeholder="Anniversary, birthday, high-chair needed, or food allergies..."></textarea>
+            </div>
+
+            <button type="submit" id="btn-submit-reservation" class="btn-reservation-submit">
+              <i class="fa-regular fa-calendar-check"></i>
+              <span>Confirm Table Reservation</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       LOCATION, OPENING HOURS & AMENITIES
+       ======================================================================== -->
+  <section id="hours-location" class="location-hours-section">
+    <div class="container">
+      <div class="location-grid">
+        <!-- Left: Opening Hours Schedule -->
+        <div class="hours-schedule-card">
+          <h4>
+            <i class="fa-regular fa-clock" style="color: var(--brand-crema);"></i>
+            <span>Weekly Roastery & Bistro Schedule</span>
+          </h4>
+          <table class="hours-table" id="schedule-hours-table">
+            <tr data-day="1">
+              <td>Monday</td>
+              <td class="time-col">7:00 AM – 10:00 PM</td>
+            </tr>
+            <tr data-day="2">
+              <td>Tuesday</td>
+              <td class="time-col">7:00 AM – 10:00 PM</td>
+            </tr>
+            <tr data-day="3">
+              <td>Wednesday</td>
+              <td class="time-col">7:00 AM – 10:00 PM</td>
+            </tr>
+            <tr data-day="4">
+              <td>Thursday</td>
+              <td class="time-col">7:00 AM – 10:00 PM</td>
+            </tr>
+            <tr data-day="5">
+              <td>Friday</td>
+              <td class="time-col">7:00 AM – 11:00 PM</td>
+            </tr>
+            <tr data-day="6">
+              <td>Saturday</td>
+              <td class="time-col">8:00 AM – 11:00 PM</td>
+            </tr>
+            <tr data-day="0">
+              <td>Sunday</td>
+              <td class="time-col">8:00 AM – 9:30 PM</td>
+            </tr>
+          </table>
+
+          <div class="amenities-tag-group">
+            <span class="amenity-badge"><i class="fa-solid fa-wifi"></i> 300 Mbps Fiber WiFi</span>
+            <span class="amenity-badge"><i class="fa-solid fa-plug"></i> Laptop Power Outlets</span>
+            <span class="amenity-badge"><i class="fa-solid fa-paw"></i> Dog Friendly Terrace</span>
+            <span class="amenity-badge"><i class="fa-solid fa-wheelchair"></i> Accessible Entry</span>
+            <span class="amenity-badge"><i class="fa-solid fa-square-parking"></i> Reserved Parking</span>
+          </div>
+        </div>
+
+        <!-- Right: Address & Direct Contact -->
+        <div class="location-info-block">
+          <span class="section-eyebrow">Visit Our Sanctuary</span>
+          <h3>Warm Coffee & Honest Food Awaits</h3>
+          <p>Conveniently situated in the historic downtown arts district, our sun-filled cafe features exposed brick walls, comfortable seating for remote work, and a leafy garden courtyard.</p>
+
+          <div class="contact-direct-items">
+            <div class="contact-direct-item">
+              <div class="contact-direct-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-direct-text">
+                <strong>Our Address</strong>
+                <span>428 Heritage Boulevard, Artisan Arts District, Suite 100</span>
+              </div>
+            </div>
+            <div class="contact-direct-item">
+              <div class="contact-direct-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-direct-text">
+                <strong>Telephone Inquiries</strong>
+                <span>+1 (555) 382-9104 (Cafe & Order Desk)</span>
+              </div>
+            </div>
+            <div class="contact-direct-item">
+              <div class="contact-direct-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-direct-text">
+                <strong>Electronic Mail</strong>
+                <span>hello@artisancoffeeshop.com</span>
+              </div>
+            </div>
+          </div>
+
+          <a id="btn-get-directions" href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn-primary-lg" style="display: inline-flex;">
+            <i class="fa-solid fa-diamond-turn-right"></i>
+            <span>Get Directions on Google Maps</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       GUEST REVIEWS & REPUTATION
+       ======================================================================== -->
+  <section id="reviews" class="reviews-section">
+    <div class="container">
+      <div class="section-header-centered">
+        <span class="section-eyebrow">Guest Impressions</span>
+        <h2 class="section-title">Loved by Coffee Lovers & Foodies</h2>
+        <p class="section-subtitle">Real experiences from our daily community of creatives, neighbors, and culinary travelers.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">"The specialty espresso here is on par with the best roasteries in Melbourne or Tokyo. And their Genovese Chicken Pesto Pizza blew my entire team away. An absolute jewel of a spot!"</p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">MS</div>
+            <div class="reviewer-info">
+              <strong>Marcus Sterling</strong>
+              <span>Architect & Regular Guest</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">"Their traditional Persian breakfast and warm kunafa are unforgettable. The attention to detail, gorgeous ambient music, and fast online ordering make this my go-to weekend ritual."</p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">SL</div>
+            <div class="reviewer-info">
+              <strong>Dr. Sophia Lin</strong>
+              <span>Biomedical Researcher</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">"The atmosphere is cozy without feeling cramped. Fast WiFi, genuinely friendly baristas, and the French butter croissants are flaky perfection. You can taste the genuine craftsmanship in every bite."</p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">DA</div>
+            <div class="reviewer-info">
+              <strong>David Alvarez</strong>
+              <span>Writer & Remote Professional</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer id="contact" class="site-footer-editorial">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Summary -->
+        <div class="footer-brand-col">
+          <div class="brand-logo-link" style="display: inline-flex;">
+            <img src="assets/logo.WebP" alt="Logo" class="brand-logo-img">
+            <div class="brand-title-group">
+              <span class="brand-title">Coffee Shop</span>
+              <span class="brand-subtitle">Roastery & Bistro</span>
+            </div>
+          </div>
+          <p>Dedicated to the craft of exceptional small-batch coffees, slow-fermented hearth breads, and wholesome bistro meals created with love.</p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://telegram.org" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+          <h4 class="footer-heading">Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="#menu">Full Menu & Ordering</a></li>
+            <li><a href="#signature">Chef's Signature Picks</a></li>
+            <li><a href="#story">Roastery Philosophy</a></li>
+            <li><a href="#reservations">Book a Table</a></li>
+            <li><a href="#hours-location">Hours & Location</a></li>
+          </ul>
+        </div>
+
+        <!-- Specialties -->
+        <div>
+          <h4 class="footer-heading">Offerings</h4>
+          <ul class="footer-links-list">
+            <li><a href="#menu">Single-Origin Roasts</a></li>
+            <li><a href="#menu">Viennoiserie & Bakes</a></li>
+            <li><a href="#menu">Wood-Fired Sourdough</a></li>
+            <li><a href="#menu">Artisan Pastas</a></li>
+            <li><a href="#menu">Catering & Events</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="footer-newsletter-box">
+          <h4 class="footer-heading">Stay Connected</h4>
+          <p>Join our Roastery Club for exclusive seasonal release tastings, chef dinners, and 10% off your next online order.</p>
+          <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+            <input type="email" id="newsletter-email-input" class="newsletter-input" placeholder="Your email address..." required>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p>&copy; <span id="current-year">2026</span> Coffee Shop Roastery & Bistro. All rights reserved.</p>
+        <p>Crafted with culinary pride • 428 Heritage Blvd</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       SLIDE-OUT CART DRAWER
+       ======================================================================== -->
+  <div id="cart-drawer-overlay" class="cart-drawer-overlay" onclick="closeCartDrawer()"></div>
+  <aside id="cart-drawer" class="cart-drawer" role="dialog" aria-label="Shopping Cart">
+    <!-- Header -->
+    <div class="cart-drawer-header">
+      <div class="cart-drawer-title-wrap">
+        <h3 class="cart-drawer-title">Your Order</h3>
+        <span id="drawer-item-count" class="cart-drawer-badge">0 items</span>
+      </div>
+      <button id="btn-close-cart" class="cart-drawer-close" onclick="closeCartDrawer()" aria-label="Close cart">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Service Type Toggle -->
+    <div class="drawer-order-type-tabs" role="tablist">
+      <button class="order-type-btn active" data-type="dine-in" onclick="setOrderType('dine-in')">Dine-In</button>
+      <button class="order-type-btn" data-type="takeaway" onclick="setOrderType('takeaway')">Takeaway</button>
+      <button class="order-type-btn" data-type="delivery" onclick="setOrderType('delivery')">Delivery</button>
+    </div>
+
+    <!-- Scrollable Items List -->
+    <div id="cart-items-list" class="cart-drawer-items-list">
+      <!-- Generated dynamically -->
+    </div>
+
+    <!-- Drawer Footer -->
+    <div id="cart-footer-pane" class="cart-drawer-footer">
+      <!-- Promo Code Input -->
+      <div class="promo-code-input-row">
+        <input type="text" id="cart-promo-input" class="promo-input" placeholder="Promo code (e.g. CAFE10)">
+        <button id="btn-apply-promo" class="promo-btn" onclick="applyPromoCode()">Apply</button>
+      </div>
+
+      <!-- Financial Calculations -->
+      <div class="cart-summary-line">
+        <span>Subtotal</span>
+        <span id="cart-subtotal-val">$0.00</span>
+      </div>
+      <div class="cart-summary-line" id="cart-discount-row" style="display: none; color: #2e7d32;">
+        <span>Promo Discount</span>
+        <span id="cart-discount-val">-$0.00</span>
+      </div>
+      <div class="cart-summary-line">
+        <span>Estimated Tax (8%)</span>
+        <span id="cart-tax-val">$0.00</span>
+      </div>
+      <div class="cart-summary-line total-line">
+        <span>Total Amount</span>
+        <span id="cart-total-val">$0.00</span>
+      </div>
+
+      <!-- Drawer Actions -->
+      <div class="cart-drawer-actions">
+        <button id="btn-clear-cart" class="btn-drawer-clear" onclick="clearCart()">Clear</button>
+        <button id="btn-checkout-trigger" class="btn-drawer-checkout" onclick="openCheckoutModal()">
+          <span>Proceed to Checkout</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       ITEM DETAILS / QUICK VIEW MODAL
+       ======================================================================== -->
+  <div id="quick-view-modal" class="modal-backdrop" onclick="handleModalBackdropClick(event, 'quick-view-modal')">
+    <div class="modal-card-dialog">
+      <button class="modal-close-icon" onclick="closeQuickView()" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="quick-view-media">
+        <img id="qv-item-img" src="assets/double-espresso.WebP" alt="" class="quick-view-img">
+      </div>
+
+      <div class="quick-view-body">
+        <div class="quick-view-badge-row">
+          <span id="qv-item-badge" class="signature-card-badge">Popular</span>
+          <span id="qv-item-category" class="menu-card-category">Coffee & Espresso</span>
+        </div>
+
+        <h3 id="qv-item-title" class="quick-view-title">Double Espresso</h3>
+        <div id="qv-item-price" class="quick-view-price">$2.50</div>
+
+        <p id="qv-item-desc" class="quick-view-desc">Detailed appetizing description goes here.</p>
+
+        <!-- Specs Strip -->
+        <div class="quick-view-spec-strip">
+          <div>
+            <strong id="qv-item-prep">3 min</strong>
+            <span>Prep Time</span>
+          </div>
+          <div>
+            <strong id="qv-item-cal">5 kcal</strong>
+            <span>Est. Calories</span>
+          </div>
+          <div>
+            <strong id="qv-item-craft">Artisan</strong>
+            <span>Craft Grade</span>
+          </div>
+        </div>
+
+        <p id="qv-item-notes" style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem; font-style: italic;"></p>
+
+        <!-- Actions -->
+        <div class="quick-view-actions">
+          <div class="qty-stepper" style="padding: 6px 12px;">
+            <button class="qty-btn" onclick="adjustQuickViewQty(-1)"><i class="fa-solid fa-minus"></i></button>
+            <span id="qv-item-qty" class="qty-number" style="font-size: 1.05rem; padding: 0 10px;">1</span>
+            <button class="qty-btn" onclick="adjustQuickViewQty(1)"><i class="fa-solid fa-plus"></i></button>
+          </div>
+
+          <button id="btn-qv-add-cart" class="btn-primary-lg" style="flex-grow: 1; justify-content: center;" onclick="addQuickViewToCart()">
+            <i class="fa-solid fa-plus"></i>
+            <span id="qv-add-btn-label">Add to Order • $2.50</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       CHECKOUT MODAL
+       ======================================================================== -->
+  <div id="checkout-modal" class="modal-backdrop" onclick="handleModalBackdropClick(event, 'checkout-modal')">
+    <div class="modal-card-dialog">
+      <button class="modal-close-icon" onclick="closeCheckoutModal()" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="checkout-modal-content">
+        <div class="checkout-modal-header">
+          <h3 class="checkout-modal-title">Finalize Your Order</h3>
+          <p class="checkout-modal-subtitle">Review order details and choose your preferred fulfillment</p>
+        </div>
+
+        <!-- Payment Method Selector -->
+        <div class="payment-method-selector">
+          <button type="button" class="payment-method-btn active" data-pay="counter" onclick="setPaymentMethod('counter')">
+            <i class="fa-solid fa-cash-register"></i>
+            <span>Pay at Counter</span>
+          </button>
+          <button type="button" class="payment-method-btn" data-pay="card" onclick="setPaymentMethod('card')">
+            <i class="fa-regular fa-credit-card"></i>
+            <span>Credit Card</span>
+          </button>
+          <button type="button" class="payment-method-btn" data-pay="digital" onclick="setPaymentMethod('digital')">
+            <i class="fa-brands fa-apple"></i>
+            <span>Apple / Google Pay</span>
+          </button>
+        </div>
+
+        <form id="checkout-form" onsubmit="handleCheckoutSubmit(event)">
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="chk-name">Your Name *</label>
+              <input type="text" id="chk-name" class="form-control" placeholder="Jane Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="chk-phone">Mobile Phone *</label>
+              <input type="tel" id="chk-phone" class="form-control" placeholder="(555) 000-0000" required>
+            </div>
+          </div>
+
+          <div class="form-group" id="chk-table-group">
+            <label for="chk-table">Table Number (or note if ordering to counter)</label>
+            <input type="text" id="chk-table" class="form-control" placeholder="e.g. Table #14, or 'Bar Counter'">
+          </div>
+
+          <div class="form-group">
+            <label for="chk-notes">Kitchen Preparation Notes</label>
+            <input type="text" id="chk-notes" class="form-control" placeholder="e.g. Extra hot, oat milk substitute, salad dressing on side...">
+          </div>
+
+          <div class="receipt-box">
+            <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 1rem;">
+              <span>Total Payable</span>
+              <span id="chk-modal-total-display">$0.00</span>
+            </div>
+            <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px;">Includes all applicable items, discounts, and local tax.</div>
+          </div>
+
+          <button type="submit" id="btn-place-order" class="btn-primary-lg" style="width: 100%; justify-content: center; height: 50px;">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Place Order Now</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       ORDER CONFIRMATION RECEIPT MODAL
+       ======================================================================== -->
+  <div id="receipt-modal" class="modal-backdrop" onclick="handleModalBackdropClick(event, 'receipt-modal')">
+    <div class="modal-card-dialog" style="max-width: 500px;">
+      <button class="modal-close-icon" onclick="closeReceiptModal()" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="checkout-modal-content" style="text-align: center;">
+        <div style="width: 60px; height: 60px; background-color: var(--brand-sage-light); color: var(--brand-sage); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto 1.2rem;">
+          <i class="fa-solid fa-check"></i>
+        </div>
+
+        <h3 class="checkout-modal-title">Order Received!</h3>
+        <p class="checkout-modal-subtitle">Our kitchen and baristas are now preparing your order with care.</p>
+
+        <div class="receipt-box" id="receipt-content-target">
+          <!-- Populated by script.js -->
+        </div>
+
+        <button class="btn-primary-lg" style="width: 100%; justify-content: center;" onclick="closeReceiptModal()">
+          <span>Done</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       TOAST NOTIFICATION ENGINE
+       ======================================================================== -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- ========================================================================
+       SCRIPTS
+       ======================================================================== -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

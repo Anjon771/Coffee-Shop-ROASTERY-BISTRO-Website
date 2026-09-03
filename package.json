@@ -1,0 +1,14 @@
+{
+  "name": "cafe-stor-website",
+  "version": "1.0.0",
+  "description": "Discover our cafe & restaurant menu with fresh coffee, delicious meals, online ordering, and table reservations in a cozy atmosphere.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "node -e \"console.log('Static site build ready')\""
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
